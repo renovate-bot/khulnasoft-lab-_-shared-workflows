@@ -1,0 +1,51 @@
+name: Lint (Terraform)
+
+on:
+  workflow_call:
+
+# TODO: Add job for `terraform validate`
+jobs:
+  terraform-fmt:
+      name: terraform fmt
+      runs-on: ubuntu-latest
+
+      permissions:
+        contents: read
+
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+
+      - name: terraform fmt
+        run: terraform fmt -no-color -check -diff -recursive
+  tflint:
+      name: TFLint
+      runs-on: ubuntu-latest
+
+      permissions:
+        contents: read
+
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache plugin dir
+        uses: actions/cache@v3
+        with:
+          path: ~/.tflint.d/plugins
+          key: tflint-${{ hashFiles('.tflint.hcl') }}
+
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v3
+
+      - name: Show version
+        run: tflint --version
+
+      - name: Init TFLint
+        run: tflint --init
+
+      - name: Run TFLint
+        run: tflint -f compact
