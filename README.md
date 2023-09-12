@@ -1,4 +1,4 @@
-# Teleport Shared GitHub Actions Workflows
+# KhulnaSoft Shared GitHub Actions Workflows
 
 GitHub Actions shared within the `khulnasoft-lab` organization.
 
