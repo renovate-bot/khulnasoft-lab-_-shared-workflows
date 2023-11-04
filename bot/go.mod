@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/google/go-github/v37 v37.0.0
+	github.com/google/go-github/v56 v56.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20230923072020-90731f63e7e3
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/oauth2 v0.10.0
