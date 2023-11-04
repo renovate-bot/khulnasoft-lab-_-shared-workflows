@@ -6,7 +6,7 @@ require (
 	github.com/google/go-github/v37 v37.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20230912075345-af328dc5e87b
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/oauth2 v0.10.0
+	golang.org/x/oauth2 v0.13.0
 )
 
 require (
