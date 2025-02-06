@@ -8,7 +8,7 @@ require (
 	github.com/google/go-github/v37 v37.0.0
 	github.com/google/go-github/v68 v68.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20231106034737-f1f13bf1d443
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.10.0
 	golang.org/x/oauth2 v0.17.0
 )
 
