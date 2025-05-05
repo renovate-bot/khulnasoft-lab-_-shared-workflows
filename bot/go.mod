@@ -1,6 +1,6 @@
 module github.com/khulnasoft-lab/shared-workflows/bot
 
-go 1.21
+go 1.23.0
 
 toolchain go1.23.4
 
@@ -9,7 +9,7 @@ require (
 	github.com/google/go-github/v68 v68.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20231106034737-f1f13bf1d443
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/oauth2 v0.17.0
+	golang.org/x/oauth2 v0.30.0
 )
 
 require (
