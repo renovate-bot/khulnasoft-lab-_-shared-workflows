@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.23.4
 
 require (
-	github.com/google/go-github/v37 v37.0.0
+	github.com/google/go-github/v72 v72.0.0
 	github.com/google/go-github/v72 v72.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20231106034737-f1f13bf1d443
 	github.com/stretchr/testify v1.8.4
