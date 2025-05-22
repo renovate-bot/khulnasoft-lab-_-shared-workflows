@@ -1,12 +1,12 @@
 module github.com/khulnasoft-lab/shared-workflows/bot
 
-go 1.21
+go 1.23.0
 
 toolchain go1.23.4
 
 require (
 	github.com/google/go-github/v37 v37.0.0
-	github.com/google/go-github/v68 v68.0.0
+	github.com/google/go-github/v72 v72.0.0
 	github.com/khulnasoft-lab/trace v0.0.0-20231106034737-f1f13bf1d443
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/oauth2 v0.17.0
@@ -15,7 +15,7 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/jonboulle/clockwork v0.4.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
