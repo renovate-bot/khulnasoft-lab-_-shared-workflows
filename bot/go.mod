@@ -2,7 +2,7 @@ module github.com/khulnasoft-lab/shared-workflows/bot
 
 go 1.23.0
 
-toolchain go1.23.4
+toolchain go1.25.1
 
 require (
 	github.com/google/go-github/v37 v37.0.0
